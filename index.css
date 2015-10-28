@@ -11,6 +11,7 @@ body{
 .article-content {
     -webkit-column-count: 5;
     -webkit-column-rule: 3px solid black;
+    padding-top: 30px;
 }
 .left {
     text-align: left;
@@ -86,4 +87,7 @@ blockquote {
     width: 150px;
     display: block;
     margin: 0 auto;
+}
+.div-inline{
+    display: inline;
 }

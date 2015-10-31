@@ -1,3 +1,6 @@
+@font-face {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 body{
     margin: 30px;
     padding: 30px;
@@ -21,7 +24,6 @@ body{
     font-family: fantasy;
     font-size: 30px;
     font-style: normal;
-    font-variant: normal;
     font-weight: 500;
     line-height: 26.4px;
 
@@ -54,16 +56,31 @@ p::first-letter
 }
 .img-column {
     -webkit-column-span: all;
-    column-span: all;
     text-align: center;
 }
 blockquote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 40px 40px;
+    position: relative;
+}
+blockquote:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: black;
+    top: 100%;
+    left: 0;
+}
+blockquote:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: black;
+    top: 0;
+    left: 0;
 }
 .phrase{
     font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -87,6 +104,9 @@ blockquote {
     width: 150px;
     display: block;
     margin: 0 auto;
+}
+.text-under {
+    text-align: center;
 }
 .div-inline{
     display: inline;

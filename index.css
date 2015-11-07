@@ -1,7 +1,6 @@
-@font-face {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 body{
+    font-family: 'Oswald', Helvetica, Arial, serif;
     margin: 30px;
     padding: 30px;
 }
@@ -13,7 +12,11 @@ body{
 }
 .article-content {
     -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
     -webkit-column-rule: 3px solid black;
+    -moz-column-rule: 3px solid black;
+    column-rule: 3px solid black;
     padding-top: 30px;
 }
 .left {
@@ -26,6 +29,7 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: 26.4px;
+    border-bottom: 2px solid black;
 
 }
 .right{
@@ -52,7 +56,7 @@ p::first-letter
     color: #fff;
     background: #f00;
     padding: 0 4px;
-    margin: 0 2px 0 0;
+    margin-right: 2px;
 }
 .img-column {
     -webkit-column-span: all;
@@ -61,7 +65,7 @@ p::first-letter
 blockquote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: block;
-    margin: 40px 40px;
+    margin: 40px;
     position: relative;
 }
 blockquote:after {
@@ -103,11 +107,20 @@ blockquote:before {
 .image-post {
     width: 150px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 .text-under {
     text-align: center;
 }
 .div-inline{
     display: inline;
+}
+.line
+{
+    border-bottom: 2px solid black;
+}
+.one-word {
+    text-align: center;
+    width: 10px;
+    word-wrap: break-word;
 }

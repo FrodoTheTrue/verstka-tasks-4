@@ -1,6 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+/* @import url(http://fonts.googleapis.com/css?family=Oswald); */
+@font-face
+{
+    font-family: 'AaarghRegular';
+    src: url('AaarghRegular.eot'),
+         url('AaarghRegular.woff') format('woff');
+         url('AaarghRegular.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
 body{
-    font-family: 'Oswald', Helvetica, Arial, serif;
+    font-family: AaarghRegular;
     margin: 30px;
     padding: 30px;
 }
@@ -36,21 +45,6 @@ body{
     float: right;
     padding-right: 30px;
 }
-hr.style-eight {
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-}
-hr.style-eight:after {
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
-}
 p::first-letter
 {
     color: #fff;
@@ -60,6 +54,8 @@ p::first-letter
 }
 .img-column {
     -webkit-column-span: all;
+    -moz-column-count: all;
+    column-count: all;
     text-align: center;
 }
 blockquote {
@@ -117,6 +113,7 @@ blockquote:before {
 }
 .line
 {
+    margin: 20px;
     border-bottom: 2px solid black;
 }
 .one-word {
